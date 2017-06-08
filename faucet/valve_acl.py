@@ -21,7 +21,7 @@ try:
     import valve_of
 except ImportError:
     from faucet import valve_of
-   
+
 
 def rewrite_vlan(output_dict):
     vlan_actions = []
