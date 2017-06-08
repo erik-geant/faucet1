@@ -17,8 +17,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import valve_of
-
+try:
+    import valve_of
+except ImportError:
+    from faucet import valve_of
+   
 
 def rewrite_vlan(output_dict):
     vlan_actions = []
